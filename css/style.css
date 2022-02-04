@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    color: white;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
 .flex{
     display: flex;
     
@@ -11,43 +14,63 @@
 
 .top-site{
  flex-direction: row;
- /* background-color: brown; */
  width: 100%;
- height: calc(100vh - 50px);
+ height: calc(100vh - 90px);
 }
 
 .col-right{
     flex-direction: column;
-    width: 85%;
+    width: calc(100% - 250px);
     height: 100%;
+    background-color: rgb(3, 185, 19);
 }
 
 
 .col-left{
-    width: 15%;
+    width: 250px;
     height: 100%;
 }
 
 
 .banner{
-    background-color: rgb(122, 0, 0);
-    flex-basis: 50px;
+    background-color: rgba(0, 0, 0, .4);
+    flex-basis: 90px;
 }
 
-.nav{
-    flex-basis: 100%;
+header{
+    flex-basis: 250px;
     background-color: rgb(0, 0, 0);
-    height: calc(100vh - 50px);
+    height: calc(100vh - 90px);
 }
 
 
-.main{
+main{
     background-color: rgb(3, 185, 19);
-    flex-basis: calc(100vh - 100px);
+    flex-basis: calc(100vh - 180px);
 }
 
 .player{
     width: 100%;
     background-color: rgb(12, 0, 122);
-    height: 50px;
+    height: 90px;
+}
+
+/* header */
+
+.logo{
+    width: 10em;
+    padding: 1em .5em;
+}
+.navbar{
+    flex-direction: column;
+}
+li{
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.icon{
+    width: 3em;
+    padding: .5em;
 }

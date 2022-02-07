@@ -10,29 +10,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="top-site flex">
-        <div class="col-left flex"> 
-            <header>
+    <div class="site flex">
+            <header class="flex column">
                 <img class="logo" src="img/logo.svg" alt="Logo Spotify">
-                <ul class="navbar flex">
-                    <li class="flex"><img class="icon" src="img/home.svg" alt=""> Home</li>
-                    <li class="flex"><img class="icon" src="img/search.svg" alt=""> Cerca</li>
-                    <li class="flex"><img class="icon" src="img/libreria.svg" alt=""> La mia libreria</li>
+                <ul class="column flex">
+                    <li class="flex header-centered"><img class="icon" src="img/home.svg" alt=""> Home</li>
+                    <li class="flex header-centered"><img class="icon" src="img/search.svg" alt=""> Cerca</li>
+                    <li class="flex header-centered"><img class="icon" src="img/libreria.svg" alt=""> La mia libreria</li>
                 </ul>
                 <h3>PLAYLIST</h3>
-                <span>
-                    <img src="img/" alt="">
+                <span class="flex header-centered">
+                    <i class="fas fa-plus-square"></i>
+                    Crea Playlist
                 </span>
+                <ul class="column flex playlist">
+                    <li class="flex header-centered"> Nome playlist</li>
+                    <li class="flex header-centered"> Nome playlist</li>
+                    <li class="flex header-centered"> Nome playlist</li>
+                    <li class="flex header-centered"> Nome playlist</li>
+                    <li class="flex header-centered"> Nome playlist</li>
+                    <li class="flex header-centered"> Nome playlist</li>
+                    <li class="flex header-centered"> Nome playlist</li>
+                    <li class="flex header-centered"> Nome playlist</li>
+                    <li class="flex header-centered"> Nome playlist</li>
+                    <li class="flex header-centered"> Nome playlist</li>
+                </ul>
+                <div class="profile flex">
+                    <div class="install flex">
+                        <img src="img/download.svg" alt="">
+                        Installa app
+                    </div>
+                    <div class="line"></div>
+                    <div class="user-container flex">
+                        <div class="img-container">
+                            <img class="img-user" src="img/profile.svg" alt=""> 
+                        </div>
+                        <span>John Doe</span>
+                    </div>
+                </div>
             </header>
-        </div>
-        <div class="col-right flex">
             <div class="banner"></div>
             <main></main>
-        </div>
+            <div class="player"></div>
     </div>  
-        <div class="player"></div>
 
 </body>
 </html>

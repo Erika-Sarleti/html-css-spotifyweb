@@ -3,74 +3,135 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --height-topside:calc(100vh - 90px);
+    --height-bar: 90px;
+    --font-color: #A3A3A3;
+
+}
 html{
     color: white;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 .flex{
     display: flex;
     
 }
 
-.top-site{
+.column{
+    flex-direction: column;
+}
+.site{
  flex-direction: row;
  width: 100%;
+ flex-wrap: wrap;
  height: calc(100vh - 90px);
 }
 
-.col-right{
-    flex-direction: column;
-    width: calc(100% - 250px);
-    height: 100%;
-    background-color: rgb(3, 185, 19);
-}
-
-
-.col-left{
-    width: 250px;
-    height: 100%;
-}
-
-
 .banner{
     background-color: rgba(0, 0, 0, .4);
-    flex-basis: 90px;
+    height: var(--height-bar);
+    width:calc(100% - 250px);
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 header{
-    flex-basis: 250px;
+    flex:0 0 250px;
     background-color: rgb(0, 0, 0);
-    height: calc(100vh - 90px);
+    height: var(--height-topside);
+    padding-left: 1.2em;
+    color: var(--font-color);
 }
 
 
 main{
     background-color: rgb(3, 185, 19);
-    flex-basis: calc(100vh - 180px);
+    height: var(--height-topside);
+    flex:1 0 0 ;
+
 }
 
 .player{
     width: 100%;
     background-color: rgb(12, 0, 122);
-    height: 90px;
+    height: var(--height-bar);
 }
 
 /* header */
 
 .logo{
     width: 10em;
-    padding: 1em .5em;
+    padding: 1em 0;
 }
-.navbar{
-    flex-direction: column;
-}
-li{
+.header-centered {
     flex-direction: row;
     align-items: center;
-    
+}
+
+li{
+    font-size: 14px;
 }
 
 .icon{
     width: 3em;
-    padding: .5em;
+    padding: .5em .5em .5em 0;
+}
+
+header h3{
+    padding: 1rem 0;
+    font-size: 16px;
+}
+
+header i{
+    font-size: 4em;
+    padding-right: .5rem;
+}
+
+.playlist{
+    margin: 1.3em 0;
+    height: 200px;
+    overflow-y: auto;
+}
+.playlist > li{
+    padding: .5em 0;
+}
+.profile{
+    margin-right:1.2em;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.profile .install, 
+.profile .user-container {
+    margin: .7em 0 ;
+}
+.install{
+    font-size: 12px;
+    align-items: center;
+}
+.user-container{
+    align-items: center;
+}
+
+.profile img,
+.img-container{
+    width: 1.5em;
+    margin-right: 1em;
+}
+
+.line{
+    width: 100%;
+    border: 1px solid var(--font-color);
+}
+.img-container{
+    background-color: #808080;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 1.5em;
+}
+span{
+color: white;
 }

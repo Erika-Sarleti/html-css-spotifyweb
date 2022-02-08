@@ -48,9 +48,17 @@ header{
 .logo{
     width: 8em;
     padding: 1em 0;
+    margin-left: 1.2em;
 }
 .logo-small{
     display: none;
+}
+.header-line{
+    border: 1px solid #ADFF2F;
+    height: 80%;
+    margin-left: -1.2em;
+    margin-right: calc(1.2em - 2px);
+    
 }
 header .nav-item{
     align-items: center;
@@ -192,12 +200,14 @@ main h2{
 .track-played{
     padding: 1em 0;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    overflow-x: auto;
     
     
 }
 .track-item{
     width: calc(100% / 6 - 1em);
+    min-width: 250px;
     margin: 0 1em 2em 0;
     flex-direction: column;
     text-align: center;
@@ -252,12 +262,12 @@ main h2{
 /* cambio dispositivi */
 @media screen and (max-width:1100px) and (min-width:701px){
     .track-item{
-        width: calc(100% / 4 - 1em);
+        min-width: 250px;
     }
 }
 @media screen and (max-width:700px){
     .track-item{
-        width: calc(100% / 2 - 1em);
+        min-width: 200px;
     }
 }
 @media screen and (max-width:600px){
